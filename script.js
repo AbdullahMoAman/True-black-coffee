@@ -33,3 +33,25 @@ allSections.forEach((section) => {
   sectionObserver.observe(section);
   section.classList.add("section-hidden");
 });
+
+// Reveal footer
+const footer = document.querySelectorAll("footer");
+
+const revealFooter = function (entries, observer) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.remove("footer-hidden");
+    observer.unobserve(entry.target);
+  });
+};
+
+const footerObserver = new IntersectionObserver(revealFooter, {
+  root: null,
+  threshold: 0.15,
+});
+
+footer.forEach((footer) => {
+  footerObserver.observe(footer);
+  footer.classList.add("footer-hidden");
+});
