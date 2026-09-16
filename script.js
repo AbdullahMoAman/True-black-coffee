@@ -55,3 +55,12 @@ footer.forEach((footer) => {
   footerObserver.observe(footer);
   footer.classList.add("footer-hidden");
 });
+
+// Menu bar visability for phone apperes
+const menuBar = document.querySelector(".menu-bar");
+const navLinks = document.querySelector(".nav-links");
+
+menuBar.addEventListener("click", function () {
+  navLinks.classList.toggle("nav-hidden");
+  navLinks.style.display = "flex";
+});
