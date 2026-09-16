@@ -212,7 +212,7 @@ li {
 .section--2 {
   margin: 0 auto;
   width: 80%;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
   padding-top: 10rem;
 }
 
@@ -272,7 +272,7 @@ li {
 .section--3 {
   margin: 0 auto;
   width: 80%;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
   padding-top: 10rem;
 }
 
@@ -466,5 +466,17 @@ li {
   .footer::before {
     background-size: 20rem;
     opacity: 0.1;
+  }
+
+  .section--2 h2 {
+    margin: 0 auto;
+    width: 16rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .section--3 h2 {
+    margin: 0 auto;
+    width: 16rem;
+    margin-bottom: 1.6rem;
   }
 }
