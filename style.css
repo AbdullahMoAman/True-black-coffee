@@ -184,7 +184,11 @@ li {
 .aboutUs-content p {
   max-width: 35rem;
   font-size: 1.2rem;
-  border: dashed white 2px;
+  border-right: transparent;
+  border-left: transparent;
+  border-top: solid 2px #fff;
+  border-bottom: solid 2px #fff;
+  border-radius: 1rem;
   padding: 0.7rem;
   margin-bottom: 2rem;
 }
