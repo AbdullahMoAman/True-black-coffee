@@ -61,6 +61,7 @@ const menuBar = document.querySelector(".menu-bar");
 const navLinks = document.querySelector(".nav-links");
 
 menuBar.addEventListener("click", function () {
-  navLinks.classList.toggle("nav-hidden");
-  navLinks.style.display = "flex";
+  // const isOpen = navLinks.classList.contains("nav-open");
+
+  navLinks.classList.toggle("nav-open");
 });
